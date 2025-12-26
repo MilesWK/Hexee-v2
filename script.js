@@ -2,6 +2,7 @@ const hex = document.getElementById("hexcode")           // The color input on t
 const display = document.getElementById("display")       // The hex code display on the right side 
 const cbg = document.getElementById("color_background")  // The background of the right side
 const cc = document.getElementById("copycode")           // The button to copy the hex code
+const cursor = document.getElementById("cursor")
 
 var hex_code = "000000"
 
@@ -10,6 +11,7 @@ var update_hex = function() {                            // Update display, colo
     console.log(hex_code)
     display.innerText = hex_code
     cbg.style.backgroundColor = hex_code
+    cursor.style.color = hex_code
 }
 
 function copy_code() {                                   // Copy code to the clipboard

@@ -1,4 +1,4 @@
-body, html{margin: 0;}
+body, html{margin: 0; background-image: url('hbg.png'); background-size: 50%;}
 h1 {font-family: 'Courier New', Courier, monospace;}
 p {font-family: 'Courier New', Courier, monospace}
 
@@ -6,7 +6,7 @@ p {font-family: 'Courier New', Courier, monospace}
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
     width: 100vh;
 }
 
@@ -32,7 +32,7 @@ input {
     cursor: pointer
 }
 
-input:hover{
+input:hover {
     width: 100px;
     height: 100px;
 }
@@ -45,7 +45,7 @@ input:hover{
 }
 
 button {
-    background-color: rgb(94, 105, 245);
+    background-color: rgb(185, 185, 185);
     border: none;
     height: 50px;
     width: 130px;
@@ -56,9 +56,48 @@ button {
     padding: 0px;
     cursor: pointer;
     font-weight: bold;
+    box-shadow: 2px 2px 0px;
 }
 
 button:hover {
     height: 70px;
     width: 150px;
+    box-shadow: 9px 9px 0px;
+}
+
+button:active {
+    height: 50px;
+    width: 130px;
+    box-shadow: 4px 4px 0px;
+}
+
+input:focus {
+    width: 100px;
+    height: 100px;
+}
+input:active {
+    height: 50px;
+    width: 130px;
+}
+
+.footer {
+    text-align: center;
+    border-top: black 3px solid;
+}
+
+#cursor {
+    opacity: 1;
+    animation: cursor ease infinite 1s
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
