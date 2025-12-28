@@ -16,4 +16,12 @@ Features:
 
 So, why are you reading this!? Go check it out:
 
+-----
+
+# Self-Hosting:
+Literally, it's static. Super easy
+1. Press the download button in the corner to download the files as a `.zip` folder.
+2. Extract them to the desired place, just keep them in the same location
+3. Open `index.html` in your perferred browser and enjoy!
+
 https://hexee.mileswk.com/
